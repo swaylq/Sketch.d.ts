@@ -137,6 +137,7 @@ declare class NSArray<T = NSObject> {
     [index: number]: T;
     count(): number;
     objectAtIndex(index: number): T;
+    forEach(handle: Function): void;
 }
 declare class NSArrayController {}
 declare class NSATSTypesetter {}
