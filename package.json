@@ -34,7 +34,7 @@
   "devDependencies": {
     "@skpm/builder": "^0.5.2",
     "@types/fs-extra": "^5.0.4",
-    "@types/node": "^8.0.56",
+    "@types/node": "^11.11.0",
     "fs-extra": "^7.0.0",
     "ts-node": "^3.3.0",
     "typescript": "^3.0.0"

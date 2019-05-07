@@ -1,0 +1,125 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSLevelIndicatorCell<T0 = void, T1 = void, T2 = void> extends NSActionCell, CALayerDelegateProtocol {
+    _drawRatingWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawRatingWithFrame: P0, _inView: P1): R;
+    _rankIndicatorSize<R = CGSize>(): R;
+    _coreUIDrawOptionsForMajorTickMark<R = unknown>(): R;
+    _coreUIDrawOptionsForMinorTickMark<R = unknown>(): R;
+    _metricsForDrawOptions_inAppearance_outSize_outAlignmentInsets<R = void, P0 = unknown, P1 = unknown, P2 = CGSize, P3 = NSEdgeInsets>(__metricsForDrawOptions: P0, _inAppearance: P1, _outSize: P2, _outAlignmentInsets: P3): R;
+    _majorTickMarkMetricsInAppearance_outSize_outAlignmentInsets<R = void, P0 = unknown, P1 = CGSize, P2 = NSEdgeInsets>(__majorTickMarkMetricsInAppearance: P0, _outSize: P1, _outAlignmentInsets: P2): R;
+    _minorTickMarkMetricsInAppearance_outSize_outAlignmentInsets<R = void, P0 = unknown, P1 = CGSize, P2 = NSEdgeInsets>(__minorTickMarkMetricsInAppearance: P0, _outSize: P1, _outAlignmentInsets: P2): R;
+    _isMajorTickMarkAtIndex<R = boolean, P0 = number>(__isMajorTickMarkAtIndex: P0): R;
+    tickMarkValueAtIndex<R = number, P0 = number>(_tickMarkValueAtIndex: P0): R;
+    _rectOfTickMarkAtIndex_minorTickSize_minorTickAlignmentInsets_majorTickSize_majorTickAlignmentInsets<R = CGRect, P0 = number, P1 = CGSize, P2 = NSEdgeInsets, P3 = CGSize, P4 = NSEdgeInsets>(__rectOfTickMarkAtIndex: P0, _minorTickSize: P1, _minorTickAlignmentInsets: P2, _majorTickSize: P3, _majorTickAlignmentInsets: P4): R;
+    rectOfTickMarkAtIndex<R = CGRect, P0 = number>(_rectOfTickMarkAtIndex: P0): R;
+    _tickMarksHeight<R = number>(): R;
+    _drawTickMarksWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawTickMarksWithFrame: P0, _inView: P1): R;
+    _effectiveDrawRatingPlaceholder<R = boolean>(): R;
+    setAlwaysDrawRatingPlaceholder<R = void, P0 = boolean>(_setAlwaysDrawRatingPlaceholder: P0): R;
+    alwaysDrawRatingPlaceholder<R = boolean>(): R;
+    _updateTrackingValueForPoint<R = void, P0 = CGPoint>(__updateTrackingValueForPoint: P0): R;
+    setSelectable<R = void, P0 = boolean>(_setSelectable: P0): R;
+    isSelectable<R = boolean>(): R;
+    _shouldDrawFocus<R = boolean>(): R;
+    _tickMarksLayerInView<R = unknown, P0 = unknown>(__tickMarksLayerInView: P0): R;
+    _indicatorLayerInView<R = unknown, P0 = unknown>(__indicatorLayerInView: P0): R;
+    _subclassOverridesDrawingMethods<R = boolean>(): R;
+    _shouldDrawRTL<R = boolean>(): R;
+    isOpaque<R = boolean>(): R;
+    _indicatorAlignmentRectInsetsInView<R = NSEdgeInsets, P0 = unknown>(__indicatorAlignmentRectInsetsInView: P0): R;
+    _indicatorAlignmentRectForBounds_inView<R = CGRect, P0 = CGRect, P1 = unknown>(__indicatorAlignmentRectForBounds: P0, _inView: P1): R;
+    _indicatorRectForBounds_inView<R = CGRect, P0 = CGRect, P1 = unknown>(__indicatorRectForBounds: P0, _inView: P1): R;
+    _alignmentRectInsetsInView<R = NSEdgeInsets, P0 = unknown>(__alignmentRectInsetsInView: P0): R;
+    _hasDarkBackground<R = boolean>(): R;
+    _indicatorStateInView<R = unknown, P0 = unknown>(__indicatorStateInView: P0): R;
+    _updateInTableViewForControlView<R = void, P0 = unknown>(__updateInTableViewForControlView: P0): R;
+    setImage<R = void, P0 = unknown>(_setImage: P0): R;
+    setRatingPlaceholderImage<R = void, P0 = unknown>(_setRatingPlaceholderImage: P0): R;
+    ratingPlaceholderImage<R = unknown>(): R;
+    setRatingImage<R = void, P0 = unknown>(_setRatingImage: P0): R;
+    ratingImage<R = unknown>(): R;
+    setPlaceholderVisibility<R = void, P0 = number>(_setPlaceholderVisibility: P0): R;
+    placeholderVisibility<R = number>(): R;
+    setDrawsTieredCapacityLevels<R = void, P0 = boolean>(_setDrawsTieredCapacityLevels: P0): R;
+    drawsTieredCapacityLevels<R = boolean>(): R;
+    _defaultCriticalFillColor<R = unknown>(): R;
+    _defaultWarningFillColor<R = unknown>(): R;
+    _defaultFillColor<R = unknown>(): R;
+    setCustomCriticalFillColor<R = void, P0 = unknown>(_setCustomCriticalFillColor: P0): R;
+    customCriticalFillColor<R = unknown>(): R;
+    setCustomWarningFillColor<R = void, P0 = unknown>(_setCustomWarningFillColor: P0): R;
+    customWarningFillColor<R = unknown>(): R;
+    setCustomFillColor<R = void, P0 = unknown>(_setCustomFillColor: P0): R;
+    customFillColor<R = unknown>(): R;
+    setCriticalFillColor<R = void, P0 = unknown>(_setCriticalFillColor: P0): R;
+    criticalFillColor<R = unknown>(): R;
+    setWarningFillColor<R = void, P0 = unknown>(_setWarningFillColor: P0): R;
+    warningFillColor<R = unknown>(): R;
+    setFillColor<R = void, P0 = unknown>(_setFillColor: P0): R;
+    fillColor<R = unknown>(): R;
+    setDoubleValue<R = void, P0 = number>(_setDoubleValue: P0): R;
+    doubleValue<R = number>(): R;
+    setFloatValue<R = void, P0 = number>(_setFloatValue: P0): R;
+    floatValue<R = number>(): R;
+    setIntegerValue<R = void, P0 = number>(_setIntegerValue: P0): R;
+    integerValue<R = number>(): R;
+    setIntValue<R = void, P0 = number>(_setIntValue: P0): R;
+    intValue<R = number>(): R;
+    setObjectValue<R = void, P0 = unknown>(_setObjectValue: P0): R;
+    objectValue<R = unknown>(): R;
+    setStringValue<R = void, P0 = unknown>(_setStringValue: P0): R;
+    stringValue<R = unknown>(): R;
+    _clearLevelIndicatorAux<R = void>(): R;
+    _levelIndicatorAuxCreatingIfNeeded<R = unknown, P0 = boolean>(__levelIndicatorAuxCreatingIfNeeded: P0): R;
+    initWithLevelIndicatorStyle<R = unknown, P0 = number>(_initWithLevelIndicatorStyle: P0): R;
+    _dotFadeAlpha<R = number>(): R;
+    _starColorOnDark<R = unknown, P0 = boolean>(__starColorOnDark: P0): R;
+    accessibilityIsAllowedValuesAttributeSettable<R = boolean>(): R;
+    accessibilityAllowedValuesAttribute<R = unknown>(): R;
+    accessibilityIsChildrenValueAttributeSettable<R = boolean>(): R;
+    accessibilityChildrenAttribute<R = unknown>(): R;
+    accessibilityIsCriticalValueAttributeSettable<R = boolean>(): R;
+    accessibilityCriticalValueAttribute<R = unknown>(): R;
+    accessibilityIsWarningValueAttributeSettable<R = boolean>(): R;
+    accessibilityWarningValueAttribute<R = unknown>(): R;
+    accessibilityIsMaxValueAttributeSettable<R = boolean>(): R;
+    accessibilityMaxValueAttribute<R = unknown>(): R;
+    accessibilityIsMinValueAttributeSettable<R = boolean>(): R;
+    accessibilityMinValueAttribute<R = unknown>(): R;
+    accessibilityIsOrientationAttributeSettable<R = boolean>(): R;
+    accessibilityOrientationAttribute<R = unknown>(): R;
+    accessibilitySubroleAttribute<R = unknown>(): R;
+    core<R = _NSLevelIndicatorCore>(): R;
+    setCore<R = void, P0 = _NSLevelIndicatorCore>(_v: P0): R;
+    numberOfMajorTickMarks<R = number>(): R;
+    setNumberOfMajorTickMarks<R = void, P0 = number>(_v: P0): R;
+    numberOfTickMarks<R = number>(): R;
+    setNumberOfTickMarks<R = void, P0 = number>(_v: P0): R;
+    tickMarkPosition<R = number>(): R;
+    setTickMarkPosition<R = void, P0 = number>(_v: P0): R;
+    criticalValue<R = number>(): R;
+    setCriticalValue<R = void, P0 = number>(_v: P0): R;
+    warningValue<R = number>(): R;
+    setWarningValue<R = void, P0 = number>(_v: P0): R;
+    maxValue<R = number>(): R;
+    setMaxValue<R = void, P0 = number>(_v: P0): R;
+    minValue<R = number>(): R;
+    setMinValue<R = void, P0 = number>(_v: P0): R;
+    levelIndicatorStyle<R = number>(): R;
+    setLevelIndicatorStyle<R = void, P0 = number>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace NSLevelIndicatorCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell, CALayerDelegateProtocol {
+      alloc<R = NSLevelIndicatorCell>(): R;
+      new: <R = NSLevelIndicatorCell>() => R;
+      coreForLevelIndicatorStyle<R = unknown, P0 = number>(_coreForLevelIndicatorStyle: P0): R;
+    }
+  }
+}
+
+declare const NSLevelIndicatorCell: cocoa.NSLevelIndicatorCell.CLASS;

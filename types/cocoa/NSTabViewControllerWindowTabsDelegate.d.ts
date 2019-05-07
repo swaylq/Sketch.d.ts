@@ -1,0 +1,10 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSTabViewControllerWindowTabsDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTabViewControllerWindowTabsDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
+  }
+}
+
+declare const NSTabViewControllerWindowTabsDelegate: cocoa.NSTabViewControllerWindowTabsDelegate.CLASS;

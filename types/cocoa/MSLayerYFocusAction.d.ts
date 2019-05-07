@@ -1,0 +1,15 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSLayerYFocusAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
+    label<R = unknown>(): R;
+  }
+  namespace MSLayerYFocusAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
+      alloc<R = MSLayerYFocusAction>(): R;
+      new: <R = MSLayerYFocusAction>() => R;
+    }
+  }
+}
+
+declare const MSLayerYFocusAction: cocoa.MSLayerYFocusAction.CLASS;

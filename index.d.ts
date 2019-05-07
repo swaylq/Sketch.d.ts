@@ -1,5 +1,6 @@
-/// <reference path="./types/sketch.d.ts" />
-/// <reference path="./types/rest.d.ts" />
-/// <reference path="./types/mocha.d.ts" />
+/// <reference path="./types/cocoa.d.ts" />
 /// <reference path="./types/api.d.ts" />
-/// <reference path="./types/node.d.ts" />
+/// <reference path="./types/webview.d.ts" />
+/// <reference path="./types/util.d.ts" />
+/// <reference path="./types/sketch-constants.d.ts" />
+
